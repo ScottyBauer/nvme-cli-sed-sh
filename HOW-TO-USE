@@ -1,0 +1,37 @@
+Lets say you want to bring your device out of a factory default state
+
+you will use the following test scripts:
+
+
+#### Taking ownership of the device in NORMAL mode ####
+./ownership.sh (Sets admin CPIN to abcdefg)
+./activatelsp.sh (Activates the Locking SP in NORMAL mode)
+./setuplrs.sh (Sets up 5 Locking ranges in normal mode)
+./enable-users.sh (Enables 5 users in the Locking SP)
+./add_users_to_lrs.sh (adds user1 to lr 1, user 2 to user2, etc (gives them permission to Unlock/Lock as RW))
+
+./set-user-pws.sh (Sets the user passwords to "bla" via the Admin1 Locking SP authority)
+
+
+
+./users_lock_ranges.sh (Locks each locking range)
+./users_unlock_ranges.sh (unlocks each locking range)
+
+./save-users (Saves the user passwords for replay upon resume from suspend)
+
+
+
+#### Taking Ownership in Single User Mode #####
+
+./ownership.sh
+./activatelsp_SUM.sh
+./setuplrs_SUM.sh
+./set-user-pws-SUM.sh
+
+
+
+
+
+
+
+
