@@ -22,12 +22,13 @@ you will use the following test scripts:
 
 
 #### Taking Ownership in Single User Mode #####
+/ownership.sh && ./activatelsp_SUM.sh && ./setuplrs_SUM.sh && ./set-user-pws-SUM.sh && ./users_unlock_ranges_SUM.sh
 
-./ownership.sh
-./activatelsp_SUM.sh
-./setuplrs_SUM.sh
-./set-user-pws-SUM.sh
 
+
+./save_user_SUM.sh (save our SUM password into the kernel for unlocking from s3)
+
+./users_lock_ranges_SUM.sh (lock SUM user range)
 
 
 
